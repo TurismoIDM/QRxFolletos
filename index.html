@@ -1,12 +1,12 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta chartset=utf-8">
-		<title></title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta chartset="utf-8">
+	<title></title>
 	</style>
-			body {
-			background-color: lightblue;
-			text-align: center;
+		body {
+		background-color: lightblue;
+		text-align: center;
 		}			
     
     .lds-default {
@@ -98,7 +98,7 @@
       const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwoueMBQf6nmwbanuztQ3mnVn06oYPzWFd33HsC47lu2gI1JVBMda_Me8VSTD8__PAq/exec";
       
       var url = document.location.href;
-      var k = url.substr(url.lastIndex=f("k=")+2);
+      var k = url.substr(url.lastIndexOf("k=")+2);
     
       if(k){
         fetch(AS_URL_BASE+'?k='+k)
